@@ -77,6 +77,10 @@ jupyter notebook stop                   # 停止 jupyter lab/notebook 服务
 > 支持的kenrls
 > https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
 
+doc
+> https://jupyter.readthedocs.io/en/latest/install-kernel.html
+> http://bluegalaxy.info/codewalk/2017/12/04/javascript-how-to-install-javascript-kernel-in-jupyter-notebook/
+
 安装 node.js (https://github.com/notablemind/jupyter-nodejs)
 
 ```
@@ -87,4 +91,9 @@ npm install && node install.js
 npm run build
 npm run build-ext
 jupyter console --kernel nodejs
+```
+
+安装 jupyter-mit-scheme
+```
+docker run -it --rm -p 8888:8888 kkwok/jupyter-mit-scheme
 ```
