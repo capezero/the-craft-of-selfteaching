@@ -72,3 +72,19 @@ jupyter notebook list                   # 查看正在运行的 jupyter lab/note
 jupyter notebook stop                   # 停止 jupyter lab/notebook 服务
 ```
 
+安装新kernel
+
+> 支持的kenrls
+> https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+
+安装 node.js (https://github.com/notablemind/jupyter-nodejs)
+
+```
+git clone https://github.com/notablemind/jupyter-nodejs.git
+cd jupyter-nodejs
+mkdir -p ~/.ipython/kernels/nodejs/
+npm install && node install.js
+npm run build
+npm run build-ext
+jupyter console --kernel nodejs
+```
